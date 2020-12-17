@@ -10,8 +10,9 @@ file_put_contents(
             'DATA' => file_get_contents('php://input'),
         ],
         JSON_PRETTY_PRINT
-    ),
+    ) . PHP_EOL,
     FILE_APPEND
 );
 
 http_response_code(200);
+echo 'ok', PHP_EOL;
