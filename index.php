@@ -8,6 +8,7 @@ file_put_contents(
             'POST' => $_POST,
             'FILES' => $_FILES,
             'DATA' => file_get_contents('php://input'),
+            'SERVER' => $_SERVER,
         ],
         JSON_PRETTY_PRINT
     ) . PHP_EOL,
